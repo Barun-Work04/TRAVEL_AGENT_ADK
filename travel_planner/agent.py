@@ -1,5 +1,3 @@
-agent.py
-
 from google.adk.agents import Agent, ParallelAgent
 from google.adk.tools import google_search
 from dotenv import load_dotenv
