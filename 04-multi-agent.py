@@ -1,5 +1,3 @@
-04
-
 import asyncio
 from google.adk.agents import Agent, ParallelAgent
 from google.adk.runners import Runner
@@ -130,6 +128,7 @@ root_agent = Agent(
 
 # ── MAIN FUNCTION ─────────────────────────────────────────────────
 async def plan_trip(query: str):
+    await asyncio.sleep(10)
     session_service = InMemorySessionService()
 
     runner = Runner(
